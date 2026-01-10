@@ -1,5 +1,9 @@
 const images = document.querySelectorAll(".img-carousel");
 const indecators = document.querySelectorAll(".indecator");
+const openMenuIcon = document.getElementById("openMenuIcon");
+const closeMenuIcon = document.getElementById("closeMenuIcon");
+const mobileMenu = document.getElementById("mobileMenu");
+const divToggelBtns = document.querySelector(".toggel-btns .btn");
 
 let defaultIndex = 0;
 
@@ -22,4 +26,10 @@ indecators.forEach((ind) => {
     images[index].classList.remove("hidden");
     indecators[index].classList.remove("opacity-50");
   });
+});
+
+divToggelBtns.addEventListener("click", () => {
+  openMenuIcon.classList.toggle("hidden");
+  closeMenuIcon.classList.toggle("hidden");
+  mobileMenu.classList.toggle("hidden");
 });
