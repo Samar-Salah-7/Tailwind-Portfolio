@@ -232,6 +232,9 @@
   .end-3 {
     inset-inline-end: calc(var(--spacing) * 3);
   }
+  .end-5 {
+    inset-inline-end: calc(var(--spacing) * 5);
+  }
   .end-8 {
     inset-inline-end: calc(var(--spacing) * 8);
   }
@@ -1476,6 +1479,11 @@
   .lg\:static {
     @media (width >= 64rem) {
       position: static;
+    }
+  }
+  .lg\:end-12 {
+    @media (width >= 64rem) {
+      inset-inline-end: calc(var(--spacing) * 12);
     }
   }
   .lg\:order-1 {
