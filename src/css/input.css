@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: roboto;
+  src: url(../src/fonts/Roboto-VariableFont_wdth\wght.ttf);
+}
+@theme {
+  /* --spacing-myValue: 200px; */
+  --font-roboto: roboto;
+  --color-p-color: rgb(158, 158, 158);
+}
+.btn {
+  @apply cursor-pointer text-center uppercase rounded-md font-[650] font-sans;
+}
+.btn-shadow {
+  @apply transition-all duration-500 shadow-md shadow-gray-900/10;
+}
+.btn-hover {
+  @apply hover:shadow-lg hover:shadow-gray-900/30;
+}
+.btn-focus {
+  @apply focus:opacity-[0.75] focus:shadow-none;
+}
+.btn-active {
+  @apply active:opacity-[0.75] active:shadow-none;
+}
