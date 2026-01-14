@@ -4,6 +4,7 @@
     "tailwindcss": "^4.1.18"
   },
   "scripts": {
-    "scan-files": "npx @tailwindcss/cli -i ./src/css/input.css -o ./dist/output.css --watch"
+    "scan-files": "npx @tailwindcss/cli -i ./src/css/input.css -o ./dist/output.css --watch",
+    "build": "cp src/index.html dist/index.html"
   }
 }
