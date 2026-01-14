@@ -5,6 +5,6 @@
   },
   "scripts": {
     "scan-files": "npx @tailwindcss/cli -i ./src/css/input.css -o ./dist/output.css --watch",
-    "build": "cp src/index.html dist/index.html"
+    "build": "copy src\\index.html dist\\index.html"
   }
 }
